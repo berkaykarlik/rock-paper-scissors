@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p id= 'info'>win 5 matches to beat the game!</p>
     <div id='game-container'>
         <div id='com-side'>
             <div class='score'>Com: 0</div>
@@ -17,13 +18,20 @@
             <div class='score'>User: 0</div>
             <div class='choice'></div>
             <div id='controls'>
-                <button class='control-btn' id='rock'>Rock</button>
-                <button class='control-btn' id='paper'>Paper</button>
-                <button class='control-btn' id='scissors'>Scissors</button>
+                <button class='control-btn' id='rock'>
+                    <img id='btn-icon' src="resources/rocks.png" alt="rock_icon_from_freepik">
+                    Rock</button>
+                <button class='control-btn' id='paper'>
+                    <img id='btn-icon' src="resources/paper.png" alt="paper_icon_from_freepik">
+                    Paper</button>
+                <button class='control-btn' id='scissors'>
+                    <img id='btn-icon' src="resources/scissors.png" alt="scissors_from_freepik">
+                    Scissors</button>
             </div>
         </div>
     </div>
 
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <script src="rps.js"></script>
 </body>
 </html>

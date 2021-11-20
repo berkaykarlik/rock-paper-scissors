@@ -5,6 +5,7 @@ const DRAW = 0 ;
 const COMPUTER_WINS = -1 ;
 
 const game_container = document.querySelector('#game-container');
+const info_p = document.querySelector('#info');
 const buttons = document.querySelectorAll('.control-btn');
 const user_score = document.querySelector('#user-side .score');
 const user_choice = document.querySelector('#user-side .choice');
@@ -36,6 +37,9 @@ function playRound(playerSelection) {
 }
 
 function updateGameState(playerSelection,computerSelection,outcome) {
+    if (info_p){
+        info_p.remove();
+    }
     let user_color;
     let com_color;
     switch (outcome){
